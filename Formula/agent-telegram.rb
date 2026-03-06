@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class Tg < Formula
+class AgentTelegram < Formula
   desc "AI-powered Telegram CLI"
   homepage "https://github.com/avemeva/kurier"
   version "0.1.0"
@@ -12,7 +12,7 @@ class Tg < Formula
       sha256 "7ccc1fce42b151abe8b55978144dad566e244c63eeb62350ca00170c6d723572"
 
       def install
-        bin.install "tg"
+        bin.install "tg" => "agent-telegram"
       end
     end
     if Hardware::CPU.intel?
@@ -20,7 +20,7 @@ class Tg < Formula
       sha256 "MISSING"
 
       def install
-        bin.install "tg"
+        bin.install "tg" => "agent-telegram"
       end
     end
   end
@@ -31,7 +31,7 @@ class Tg < Formula
       sha256 "MISSING"
 
       def install
-        bin.install "tg"
+        bin.install "tg" => "agent-telegram"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
@@ -39,7 +39,7 @@ class Tg < Formula
       sha256 "MISSING"
 
       def install
-        bin.install "tg"
+        bin.install "tg" => "agent-telegram"
       end
     end
   end
