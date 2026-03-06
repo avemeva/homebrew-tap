@@ -5,7 +5,6 @@ class AgentTelegram < Formula
   desc "AI-powered Telegram CLI"
   homepage "https://github.com/avemeva/kurier"
   version "0.1.5"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
