@@ -4,27 +4,27 @@
 class AgentTelegram < Formula
   desc "AI-powered Telegram CLI"
   homepage "https://github.com/avemeva/kurier"
-  version "0.1.16"
+  version "0.1.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/avemeva/kurier/releases/download/v0.1.16/agent-telegram-darwin-x64.zip"
-      sha256 "032fe8e90fc30bc8006c7eae1945b11b854c9af4979d3c5500fb624b6111e790"
+      url "https://github.com/avemeva/kurier/releases/download/v0.1.17/agent-telegram-darwin-x64.zip"
+      sha256 "4ecc10f7a7fefc7a8ec4eea69946b1f1f2332a9334ebfbf6940eee2f1c66b9fe"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/avemeva/kurier/releases/download/v0.1.16/agent-telegram-darwin-arm64.zip"
-      sha256 "83137edaba7f45c9fb6a6db58473d4a3f5324fef71fb441f23135c15b36599d4"
+      url "https://github.com/avemeva/kurier/releases/download/v0.1.17/agent-telegram-darwin-arm64.zip"
+      sha256 "ec95de14e39b9aea30e9a78fdbeecc541118b3dda07527dd6acd052f1a515ef8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/avemeva/kurier/releases/download/v0.1.16/agent-telegram-linux-x64.tar.gz"
-      sha256 "e68dc8ed847f2da052fbedfb4bf912db0f60b43f1fbc8d2abab0e953d471fa89"
+      url "https://github.com/avemeva/kurier/releases/download/v0.1.17/agent-telegram-linux-x64.tar.gz"
+      sha256 "d79230c5e715c58abf382952588a844721c040fae2677b530615b7212ede4ad6"
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/avemeva/kurier/releases/download/v0.1.16/agent-telegram-linux-arm64.tar.gz"
-      sha256 "d648a95ed6fa14c0d0b6f898cbf5a5cbea5359e20df986e23a09cad5f03db879"
+      url "https://github.com/avemeva/kurier/releases/download/v0.1.17/agent-telegram-linux-arm64.tar.gz"
+      sha256 "23e2fb7b3174b71f081ace54342ffc2593e32fbf8eb401ac1c105113c2079d29"
     end
   end
 
